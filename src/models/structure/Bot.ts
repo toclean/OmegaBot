@@ -3,7 +3,7 @@ import { IConfig } from "./IConfig";
 import { Logger } from "./Logger";
 import { Client } from "discord.js";
 
-import help from "../../commands/help";
+import * as CmdHandler from "../structure/CommandHandler";
 
 import * as fs from "fs";
 import * as path from "path";
@@ -52,10 +52,11 @@ export class Bot implements IBot
             {
                 case query.startsWith(this.prefix + "ping"):
                     // Ping code
+                    CmdHandler.ping(msg);
                     break;
                 case query.startsWith(this.prefix + "help"):
                     // Help code
-                    help;
+                    CmdHandler.help();
                     break;
             }
         });
