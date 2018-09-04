@@ -1,0 +1,14 @@
+{
+  "name": "omegabot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^10.9.3",
+    "chalk": "^2.4.1",
+    "discord.js": "^11.4.2"
+  }
+}
